@@ -1,0 +1,9 @@
+/* ProfilePage */
+
+.w-16.h-16.rounded-full.bg-sky-600 {
+  box-shadow: 0 0 0 4px #e0f2fe;
+}
+
+input:disabled, select:disabled {
+  cursor: not-allowed;
+}

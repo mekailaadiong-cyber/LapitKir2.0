@@ -1,0 +1,11 @@
+/* Layout */
+
+body { background: var(--bg); }
+
+@media (min-width: 1024px) {
+  .lg-ml-60 { margin-left: 240px; }
+}
+
+.toast-success { background: #047857; color: white; }
+.toast-error { background: #b91c1c; color: white; }
+.toast-info { background: #0369a1; color: white; }

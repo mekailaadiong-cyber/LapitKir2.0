@@ -1,0 +1,13 @@
+/* FacilityDirectoryPage */
+
+[data-select-facility], [data-view-map] {
+  transition: transform 0.15s ease;
+}
+[data-select-facility]:active {
+  transform: scale(0.98);
+}
+
+/* Map sidebar list scrollbar */
+.lg\:col-span-1, .flex.flex-col.gap-2.overflow-y-auto {
+  scrollbar-width: thin;
+}

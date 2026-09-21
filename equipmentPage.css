@@ -1,0 +1,11 @@
+/* EquipmentPage */
+
+table tbody tr {
+  transition: background-color 0.12s ease;
+}
+
+/* Highlight rows whose next maintenance date has passed (visually only;
+   no date parsing here since maintenance dates are static mock strings). */
+.text-red-600.font-mono {
+  font-weight: 600;
+}

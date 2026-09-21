@@ -1,0 +1,18 @@
+/* AppointmentBookingPage */
+
+.wiz-facility-radio:checked ~ div,
+.wiz-service-radio:checked ~ div {
+  color: #0c4a6e;
+}
+
+.wiz-slot-btn:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+.wiz-slot-btn {
+  transition: transform 0.1s ease, background-color 0.15s ease;
+}
+
+/* Step progress fill animation */
+.w-7.h-7.rounded-full.flex.items-center.justify-center.text-xs.font-bold {
+  transition: background-color 0.3s ease;
+}

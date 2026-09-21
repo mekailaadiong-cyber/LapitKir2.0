@@ -1,0 +1,77 @@
+/* ── Base / global styles ── */
+
+:root {
+  --sidebar-bg: #0c1e35;
+  --sidebar-hover: #162d47;
+  --sidebar-active: #1d6fa4;
+  --primary: #1565c0;
+  --primary-light: #e3f2fd;
+  --success: #2e7d32;
+  --success-light: #e8f5e9;
+  --warning: #e65100;
+  --warning-light: #fff3e0;
+  --error: #c62828;
+  --error-light: #ffebee;
+  --info: #01579b;
+  --info-light: #e1f5fe;
+  --bg: #f0f4f8;
+  --card: #ffffff;
+  --border: #dde3ea;
+  --text: #0d1b2a;
+  --muted: #5a6f84;
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c5d0db; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #9baab8; }
+
+/* Card hover */
+.card-hover { transition: box-shadow 0.2s ease, transform 0.15s ease; }
+.card-hover:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.1); transform: translateY(-1px); }
+
+/* Status pulse */
+@keyframes pulse-green { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+.pulse-available { animation: pulse-green 2s infinite; }
+
+.data-table { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; }
+
+.tab-active { border-bottom: 2px solid var(--primary); color: var(--primary); }
+
+/* Toast */
+@keyframes slide-in { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+.toast-enter { animation: slide-in 0.3s ease; }
+
+/* Leaflet overrides */
+.leaflet-container { font-family: 'Inter', sans-serif; border-radius: 12px; }
+.leaflet-popup-content-wrapper { border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); padding: 0; overflow: hidden; }
+.leaflet-popup-content { margin: 0; min-width: 220px; }
+.leaflet-popup-tip-container { display: none; }
+.leaflet-control-zoom { border-radius: 8px !important; overflow: hidden; border: 1px solid #dde3ea !important; }
+.leaflet-control-zoom a { border-radius: 0 !important; color: #0c4a6e !important; border-bottom-color: #dde3ea !important; }
+.leaflet-control-zoom a:hover { background: #f0f9ff !important; }
+.leaflet-control-attribution { font-size: 10px !important; border-radius: 6px 0 0 0 !important; }

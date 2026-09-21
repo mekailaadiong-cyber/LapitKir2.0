@@ -1,0 +1,12 @@
+/* ResourceHistoryPage */
+
+table tbody tr {
+  transition: background-color 0.12s ease;
+}
+
+svg.fill-slate-400 {
+  transition: transform 0.15s ease;
+}
+tr:hover svg.fill-slate-400 {
+  transform: translateX(2px);
+}

@@ -1,0 +1,16 @@
+/* FeedbackPage */
+
+#fb-stars button {
+  transition: transform 0.1s ease;
+}
+#fb-stars button:hover {
+  transform: scale(1.2);
+}
+
+@keyframes response-slide-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.bg-sky-50.border.border-sky-200.rounded-lg.px-4.py-3 {
+  animation: response-slide-in 0.2s ease;
+}

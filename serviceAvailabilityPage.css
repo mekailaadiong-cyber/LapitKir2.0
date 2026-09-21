@@ -1,0 +1,8 @@
+/* ServiceAvailabilityPage */
+
+.text-2xl {
+  transition: transform 0.15s ease;
+}
+.px-5.py-4.border-b:hover .text-2xl {
+  transform: scale(1.15);
+}

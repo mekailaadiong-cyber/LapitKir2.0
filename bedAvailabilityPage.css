@@ -1,0 +1,5 @@
+/* BedAvailabilityPage */
+
+.flex.h-2.rounded-full.overflow-hidden.bg-slate-100 > div {
+  transition: width 0.4s ease;
+}

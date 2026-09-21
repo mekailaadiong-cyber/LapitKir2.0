@@ -1,0 +1,15 @@
+/* ActivityLogsPage */
+
+tr.bg-red-50\/30 {
+  border-left: 3px solid #ef4444;
+}
+
+thead tr {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+table tbody tr {
+  transition: background-color 0.12s ease;
+}

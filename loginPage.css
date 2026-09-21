@@ -1,0 +1,17 @@
+/* LoginPage */
+
+.login-screen {
+  background: var(--sidebar-bg);
+  background-image: radial-gradient(circle at 30% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 60%);
+}
+
+[data-role] {
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.demo-btn {
+  transition: transform 0.1s ease;
+}
+.demo-btn:active {
+  transform: scale(0.99);
+}

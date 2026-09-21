@@ -1,0 +1,39 @@
+/* Sidebar */
+
+.app-sidebar {
+  background: var(--sidebar-bg);
+}
+
+.sidebar-closed { transform: translateX(-100%); }
+.sidebar-open { transform: translateX(0); }
+
+@media (min-width: 1024px) {
+  .sidebar-closed, .sidebar-open { transform: translateX(0); }
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 20;
+}
+.sidebar-overlay-visible { display: block; }
+@media (min-width: 1024px) {
+  .sidebar-overlay { display: none !important; }
+}
+
+.sidebar-link { transition: background-color 0.15s ease, color 0.15s ease; }
+.sidebar-link-active { background: var(--sidebar-active); color: white; font-weight: 500; }
+.sidebar-link-inactive { color: rgba(255,255,255,0.7); }
+.sidebar-link-inactive:hover { background: rgba(255,255,255,0.1); color: white; }
+
+.sidebar-role-patient { background: #0ea5e9; }
+.sidebar-role-staff { background: #10b981; }
+.sidebar-role-admin { background: #a855f7; }
+
+.sidebar-notif-badge {
+  background: #ef4444; color: white; font-size: 11px; font-weight: 700;
+  border-radius: 999px; width: 16px; height: 16px;
+  display: flex; align-items: center; justify-content: center;
+}

@@ -1,0 +1,14 @@
+/* AppointmentStatusPage */
+
+.astat-tab {
+  position: relative;
+}
+
+@keyframes panel-slide-down {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.bg-red-50.border-t.border-red-200,
+.bg-sky-50.border-t.border-sky-200 {
+  animation: panel-slide-down 0.18s ease;
+}

@@ -1,0 +1,28 @@
+/* Header — fixed positioning + notification badge */
+
+.app-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+@media (min-width: 1024px) {
+  .app-header { left: 240px; }
+  .lg-hide { display: none; }
+}
+
+.header-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 16px;
+  height: 16px;
+  background: #ef4444;
+  border-radius: 999px;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

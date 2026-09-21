@@ -1,0 +1,16 @@
+/* ReportsPage */
+
+canvas {
+  max-width: 100%;
+}
+
+.bg-white.rounded-xl.shadow-sm.p-5 {
+  transition: box-shadow 0.2s ease;
+}
+.bg-white.rounded-xl.shadow-sm.p-5:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+@media (max-width: 480px) {
+  div[style*="height:200px"] { height: 160px !important; }
+}

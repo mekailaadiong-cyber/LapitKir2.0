@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LapitCare — Pagadian City Public Health System</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Tailwind (utility classes) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Leaflet (maps) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Chart.js (Reports page charts) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
+<!-- App styles (load order matters: base vars first) -->
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="layout.css" />
+<link rel="stylesheet" href="header.css" />
+<link rel="stylesheet" href="sidebar.css" />
+<link rel="stylesheet" href="statusBadge.css" />
+<link rel="stylesheet" href="loginPage.css" />
+<link rel="stylesheet" href="dashboardPage.css" />
+<link rel="stylesheet" href="facilityDirectoryPage.css" />
+<link rel="stylesheet" href="bedAvailabilityPage.css" />
+<link rel="stylesheet" href="equipmentPage.css" />
+<link rel="stylesheet" href="serviceAvailabilityPage.css" />
+<link rel="stylesheet" href="appointmentBookingPage.css" />
+<link rel="stylesheet" href="appointmentStatusPage.css" />
+<link rel="stylesheet" href="notificationsPage.css" />
+<link rel="stylesheet" href="profilePage.css" />
+<link rel="stylesheet" href="staffDashboardPage.css" />
+<link rel="stylesheet" href="resourceHistoryPage.css" />
+<link rel="stylesheet" href="reportsPage.css" />
+<link rel="stylesheet" href="feedbackPage.css" />
+<link rel="stylesheet" href="adminPage.css" />
+<link rel="stylesheet" href="activityLogsPage.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- App modules (ES modules — must be served over http(s), not file://) -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
